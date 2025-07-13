@@ -4,7 +4,7 @@ import pygame
 import time
 
 # ---------------- Server Configuration ----------------
-SERVER_IP = '192.168.137.142'   # Raspberry Pi IP
+SERVER_IP = '192.168.16.101'   # Raspberry Pi IP
 PORT      = 5050
 
 # ---------------- Controller Configuration ----------------
@@ -16,7 +16,7 @@ AXIS_BRAKE       = 2
 
 GEAR_SEQUENCE = ['R', 'N', '1', '2', '3', '4', '5']
 GEAR_SPEED_MULTIPLIER = {
-    '1': 1,
+    '1': 1.5,
     '2': 2,
     '3': 3,
     '4': 4,
