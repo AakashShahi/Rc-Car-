@@ -14,7 +14,7 @@ AXIS_BRAKE = 2
 
 GEAR_SEQUENCE = ['R', 'N', '1', '2', '3', '4', '5']
 GEAR_SPEED_MULTIPLIER = {
-    '1': 1.5,
+    '1': 1.3,
     '2': 2,
     '3': 3,
     '4': 4,
