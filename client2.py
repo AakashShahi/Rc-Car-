@@ -11,10 +11,9 @@ BUTTON_GEAR_DOWN = 9
 AXIS_STEERING = 0
 AXIS_GAS = 1
 AXIS_BRAKE = 2
-
 GEAR_SEQUENCE = ['R', 'N', '1', '2', '3', '4', '5']
 GEAR_SPEED_MULTIPLIER = {
-    '1': 1.3,
+    '1': 1.2,
     '2': 2,
     '3': 3,
     '4': 4,
