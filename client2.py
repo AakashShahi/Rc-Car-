@@ -13,17 +13,18 @@ AXIS_GAS = 1
 AXIS_BRAKE = 2
 GEAR_SEQUENCE = ['R', 'N', '1', '2', '3', '4', '5']
 GEAR_SPEED_MULTIPLIER = {
-    '1': 1.2,
-    '2': 2,
-    '3': 3,
-    '4': 4,
-    '5': 5
+    '1': 1.3,
+    '2': 1.8,
+    '3': 2.8,
+    '4': 3.8,
+    '5': 4.8
 }
 
 GAS_DEADZONE = 0.05
 BRAKE_DEADZONE = 0.05
 GAS_THRESHOLD_RUN = 0.6
 PWM_NEUTRAL = 1500
+
 
 def get_gear_range(gear: str) -> tuple[int, int]:
     factor = GEAR_SPEED_MULTIPLIER.get(gear, 1)
@@ -58,6 +59,7 @@ client_socket = connect_to_server()
 current_gear_index = 1
 gear_up_last_state = False
 gear_down_last_state = False
+
 
 try:
     while True:
